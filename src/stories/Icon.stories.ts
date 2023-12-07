@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Icon from "../component/Icon";
+import { COLORS } from "../constants";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -12,7 +13,18 @@ const meta = {
 	// This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
 	tags: ["autodocs"],
 	// More on argTypes: https://storybook.js.org/docs/api/argtypes
-	argTypes: {},
+	argTypes: {
+		type: {
+			options: ["CHECK", "TRASH", "ADD", "CIRCLE"],
+			control: { type: "select" },
+		},
+		size: {
+			control: { type: "range", min: 12, max: 120, step: 12 },
+		},
+		fill: {
+			control: { type: "color" },
+		},
+	},
 } satisfies Meta<typeof Icon>;
 
 export default meta;
@@ -24,6 +36,30 @@ export const Check: Story = {
 	args: {
 		type: "CHECK",
 		size: 24,
-		fill: "black",
+		fill: COLORS.ORANGE,
+	},
+};
+
+export const Trash: Story = {
+	args: {
+		type: "TRASH",
+		size: 24,
+		fill: COLORS.ORANGE,
+	},
+};
+
+export const Add: Story = {
+	args: {
+		type: "ADD",
+		size: 24,
+		fill: COLORS.ORANGE,
+	},
+};
+
+export const Circle: Story = {
+	args: {
+		type: "CIRCLE",
+		size: 24,
+		fill: COLORS.ORANGE,
 	},
 };
