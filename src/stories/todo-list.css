@@ -1,0 +1,24 @@
+.storybook-todo-list--container {
+  width: 330px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storybook-todo-list--wrap-content {
+  display: flex;
+  width: 100%;
+}
+
+.storybook-todo-list--icon {
+  display: flex;
+  margin-right: 10px;
+}
+
+.storybook-todo-list--content {
+  border: 0px;
+  outline: none;
+  width: 100%;
+}
