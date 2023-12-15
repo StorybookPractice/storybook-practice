@@ -1,4 +1,5 @@
-.storybook-todo-list--container {
+/* TodoItem에 사용되는 CSS */
+.storybook-todo-item--container {
   width: 330px;
   padding: 16px 20px;
   border-radius: 20px;
@@ -7,18 +8,23 @@
   align-items: center;
 }
 
-.storybook-todo-list--wrap-content {
+.storybook-todo-item--wrap-content {
   display: flex;
   width: 100%;
 }
 
-.storybook-todo-list--icon {
+.storybook-todo-item--icon {
   display: flex;
   margin-right: 10px;
 }
 
-.storybook-todo-list--content {
+.storybook-todo-item--content {
   border: 0px;
   outline: none;
   width: 100%;
+}
+
+/* TodoList에 사용되는 CSS */
+.storybook-todo-list--container {
+  margin: 18px 0px;
 }
