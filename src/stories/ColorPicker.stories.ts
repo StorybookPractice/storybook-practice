@@ -3,7 +3,7 @@ import ColorPicker from "../component/ColorPicker";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-	title: "Example/ColorPicker",
+	title: "Todo/ColorPicker",
 	component: ColorPicker,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
