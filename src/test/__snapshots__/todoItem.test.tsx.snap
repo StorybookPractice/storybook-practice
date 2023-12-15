@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoItem 테스트 > TodoItem 스냅샷 테스트 1`] = `
+<div
+  className="storybook-todo-list--container"
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #FF8F50",
+    }
+  }
+>
+  <div
+    className="storybook-todo-list--wrap-content"
+  >
+    <div
+      className="storybook-todo-list--icon"
+    >
+      <Icon
+        fill="#FF8F50"
+        size={16}
+        type="CIRCLE"
+      />
+    </div>
+    <input
+      className="storybook-todo-list--content"
+      placeholder="할 일을 작성해 주세요."
+      readOnly={false}
+      style={
+        {
+          "backgroundColor": "#ffffff",
+          "color": "#000000",
+        }
+      }
+      type="text"
+      value="test"
+    />
+  </div>
+  <Icon
+    fill="#FF8F50"
+    size={16}
+    type="TRASH"
+  />
+</div>
+`;
