@@ -2,12 +2,12 @@ import type { Meta, StoryObj } from "@storybook/react";
 import TodoList from "../component/TodoList";
 
 const meta = {
-	title: "Todo/TodoList",
-	component: TodoList,
-	parameters: {
-		layout: "centered",
-	},
-	tags: ["autodocs"],
+  title: "Todo/TodoList",
+  component: TodoList,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
 } satisfies Meta<typeof TodoList>;
 
 export default meta;
@@ -15,25 +15,28 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-	args: {
-		todoText: "",
-		isDone: false,
-		readOnly: false,
-	},
-};
-
-export const CompleteTodo: Story = {
-	args: {
-		todoText: "오늘 할 일 완료!",
-		isDone: true,
-		readOnly: true,
-	},
-};
-
-export const IncompleteTodo: Story = {
-	args: {
-		todoText: "아직 할 일 못 했음 ㅠㅠ",
-		isDone: false,
-		readOnly: true,
-	},
+  args: {
+    todoItems: [
+      {
+        todoText: "노트북 챙기기",
+        isDone: true,
+        readOnly: true,
+      },
+      {
+        todoText: "정신 챙기기",
+        isDone: true,
+        readOnly: true,
+      },
+      {
+        todoText: "CMC 컨퍼런스 가기",
+        isDone: false,
+        readOnly: true,
+      },
+      {
+        todoText: "저녁 맛있는거 먹기",
+        isDone: false,
+        readOnly: true,
+      },
+    ],
+  },
 };
